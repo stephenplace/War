@@ -5,7 +5,7 @@ random.seed(time.time())
 
 #two lists of cards
 def gen_deck():
-	hand_1, hand_2 = [x for x in range(1,14)]*1,[x for x in range(1,14)]*1
+	hand_1, hand_2 = [x for x in range(1,14)]*2,[x for x in range(1,14)]*2
 	hand_1, hand_2 = random.sample(hand_1,len(hand_1)),random.sample(hand_2,len(hand_2))
 	return hand_1, hand_2
 
